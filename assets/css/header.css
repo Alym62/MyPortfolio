@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('../images/background\ do\ portfolio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .title {
+    text-align: center;
+    font-weight: 100;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.information p {
+    font-weight: 400;
+    margin: .5rem;
+}
+
+.information i {
+    padding: 0 .4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        grid-template-areas: 
+        "photo title"
+        "photo information"
+        ;
+        display: grid;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        text-align: start;
+        max-width: 200px;
+        grid-area: title;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}

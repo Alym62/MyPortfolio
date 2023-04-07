@@ -1,0 +1,29 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.portfolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.portfolio li .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .85rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}

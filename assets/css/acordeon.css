@@ -1,0 +1,120 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: .9rem;
+    margin: 1rem 0;
+    transition: .8s;
+}
+
+.acordeon:hover {
+    background-color: #271e6e;
+    border-color: #271e6e;
+}
+
+.acordeon .trigger {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
+
+.trigger i {
+    font-size: 1.5rem;
+}
+
+.acordeon .content {
+    display: none;
+}
+
+.acordeon.open .content {
+    display: inline-block;
+}
+
+li i {
+    padding: 0 .5rem 0 0;
+}
+
+.languages li{
+    font-size: .8rem;
+    list-style: none;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.acordeon .me {
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.me strong {
+    font-weight: 900;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .tools ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tools i {
+    font-size: 3rem;
+}
+
+.skills .personal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .personal ul li {
+    margin-left: 2rem;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
